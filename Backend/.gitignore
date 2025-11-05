@@ -1,0 +1,13 @@
+# Ignorar o arquivo de variáveis de ambiente
+.env
+
+requeriments.txt
+
+# Ignorar caches do Python
+__pycache__/
+.app/__pycache__/
+*.pyc
+
+# Ignorar dependências (se você usar um ambiente virtual)
+venv/
+*.egg-info/
