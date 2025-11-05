@@ -69,7 +69,7 @@ FLASK_ENV=development
 
 1.  Acesse o seu PostgreSQL.
 3.  Crie o banco de dados (de preferência: nome=`challenge`, senha=`challenge`).
-4.  Execute `database-schema.sql` na query tool do seu banco alvo para criar todas as tabelas.(garanta que ele tabelas esperadas de preferência)
+4.  Execute `database-schema.sql` na query tool do seu banco alvo para criar todas as tabelas.(garante que ele contenha as tabelas esperadas).
 5.  Execute generate_data.py. O arquivo usa `challenge` para nome e senha padrão para o banco que irá popular (e.g. linha 670 `postgresql://challenge:challenge@localhost:5432/challenge_db`) através dessa linha você deve ser capaz de mudar o banco que ele direciona os dados.
 
 > Detalhe (se você é da nola) eu fiz uma pequena alteração em generate_data.py para forçar encoding utf-8(i.e. linha 76).
@@ -96,9 +96,17 @@ pip install -r requirements.txt
 # (Ele carregará as variáveis do ficheiro .env)
 flask run
 ```
-
-# O backend estará a correr em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
-2. Frontend (Dashboard React)
+O backend estará a correr em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+Url para testes
+```
+// retorna os bairros aos quais aquela loja vende/tem cadastrados
+http://127.0.0.1:5000/api/filters/regions?storeId=26
+retorna lista com {mes:[clientes_retidos, clientes_perdidos, clientes_novos]} analisando cada mês com o mês anterior para chegar aos valores
+http://127.0.0.1:5000/api/analysis/range?storeId=44&startMonth=2025-07&endMonth=2025-11
+// retorna lista com valores de faturamento e volume de vendas totais para o periodo especificiado e filtrando de acordo com selectedIds
+http://127.0.0.1:5000/api/analysis/region?storeId=44&startDate=2025-06-01&endDate=2025-11-30&selectedIds=vila-sesc,california,cenaculo
+```
+# 2. Frontend (Dashboard React)
 O frontend é o painel de controlo que o utilizador vê.
 **Passo 1: Instalar e Executar (no terminal 2)**
 
