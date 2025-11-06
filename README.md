@@ -112,7 +112,7 @@ O frontend é o painel de controlo que o utilizador vê.
 
 ```bash
 # 1. Navegue até a pasta do frontend
-cd /caminho/para/o/projeto/frontend
+cd /caminho/para/o/projeto/Frontend/meu_dashboard
 
 # 2. Instale as dependências (react, axios, recharts)
 npm install
