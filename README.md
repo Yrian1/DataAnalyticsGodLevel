@@ -1,4 +1,7 @@
+
 # Dashboard de Análise de Vendas (Food Service)
+
+
 
 Este projeto é um dashboard de Business Intelligence (BI) focado em transformar dados brutos de vendas de negócios de *food service* em *insights* acionáveis.
 
@@ -6,6 +9,8 @@ A ferramenta permite que gestores de loja visualizem de forma clara:
 
 1.  **Análise de Região:** Performance de vendas (Faturamento vs. Volume) por bairro, permitindo identificar as regiões mais lucrativas ou com maior potencial.
 2.  **Análise de Clientes:** A evolução da base de clientes ao longo do tempo, analisando métricas de Retenção, Aquisição (Novos) e Perda (*Churn*).
+
+video demonstrativo: https://youtu.be/grUL1lWbWOI
 
 ## Arquitetura
 
@@ -120,6 +125,7 @@ npm install
 # 3. Execute o servidor de desenvolvimento
 npm start
 ```
+
 
 3. **Acesso**
 O **Backend** estará a servir a API em `http://127.0.0.1:5000`.
